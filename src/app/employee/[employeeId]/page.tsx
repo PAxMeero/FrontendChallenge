@@ -1,7 +1,7 @@
 "use client";
 
 import { EmployeeModel } from "@/domain/models/employee.model";
-import EmployeeCard from "@/ui/components/EmployeeCard.component";
+import EmployeeCardDetail from "@/ui/components/EmployeeCardDetail.component";
 import Link from "next/link";
 
 export default function EditEmployeePage() {
@@ -14,7 +14,7 @@ export default function EditEmployeePage() {
   return (
     <main className="flex h-screen flex-col items-start justify-start p-4 gap-4">
       <h1>Employee Details</h1>
-      <EmployeeCard employee={employee} />
+      <EmployeeCardDetail employee={employee} />
       <Link
         className="border px-2 py-1 rounded-md"
         href={`/employee/${employee.id}/edit`}
